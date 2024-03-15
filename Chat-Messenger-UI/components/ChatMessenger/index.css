@@ -1,0 +1,7 @@
+.messenger-container{
+    background: #EFF5F5;
+    height: 100%;
+    width: 100%;
+    /* border-radius: 20px; */
+    display: flex;    
+}

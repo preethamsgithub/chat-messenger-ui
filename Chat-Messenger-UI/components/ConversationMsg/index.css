@@ -1,0 +1,141 @@
+.conv-msg-container{    
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;    
+    width: 100%;    
+    margin-bottom: 15px;
+}
+
+.sender-container{
+    justify-content: flex-start;    
+    padding-left: 15px;    
+}
+
+.receiver-container{
+    justify-content: flex-end;
+    padding-right: 15px;    
+}
+
+.sender-msg{
+    min-width: 100px;
+    max-width: 60%;
+    background: #ecebeb;
+    position: relative;    
+    border-radius: 15px;
+}
+
+.receiver-msg{
+    min-width: 100px;
+    max-width: 60%;
+    background: #497174;
+    position: relative;    
+    border-radius: 15px;
+    color: white;
+    margin-right: 5px;
+}
+
+.msg-txt{
+    font-size: 14.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    position: relative;
+}
+
+.receiver-msg:before{
+    content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+    border: 30px solid;
+    border-color: transparent transparent transparent #497174;
+}
+
+.sender-msg:before{
+    content: '';
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    border: 30px solid;
+    border-color: transparent #ecebeb transparent transparent;
+}
+
+.timestamp{    
+    margin-top: 15px;
+    font-size: 12px;
+    width: 100%;      
+}
+
+.sender-ts{
+    align-self: flex-end;
+    color: #797979;
+    text-align: right;    
+}
+
+.receiver-ts{
+    align-self: flex-start;
+    color: #78BABF;
+    margin-right: 50px;
+}
+
+.seen-icon{
+    margin-left: auto;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    transform: scale(0.7);
+}
+
+.media-container{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 4px;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+.ten-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background: #c7c7c7;
+    color: #555555;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ten-more:hover{
+    color: #6d6c6c;    
+}
+
+.media-file{
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.media-file:hover{
+    opacity: 0.8;
+}
+
+.quote-container{
+    background: #839EA0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px rgb(228, 228, 228) solid;
+    cursor: pointer;
+}
+
+.quote-container:hover{
+    background: #758d8f;
+}
